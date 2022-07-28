@@ -1,8 +1,10 @@
-import React from 'react'
+import MainSection from './components/MainSection';
 
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+      <MainSection />
+    </main>
   )
 }
 
