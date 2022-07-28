@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Advice-Generator-React-JS/static/css/main.522d5f6e.css",
+    "main.js": "/Advice-Generator-React-JS/static/js/main.ba4083da.js",
+    "index.html": "/Advice-Generator-React-JS/index.html",
+    "main.522d5f6e.css.map": "/Advice-Generator-React-JS/static/css/main.522d5f6e.css.map",
+    "main.ba4083da.js.map": "/Advice-Generator-React-JS/static/js/main.ba4083da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.522d5f6e.css",
+    "static/js/main.ba4083da.js"
+  ]
+}
