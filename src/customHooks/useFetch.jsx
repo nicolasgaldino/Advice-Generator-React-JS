@@ -6,6 +6,7 @@ const useFetch = (url = {}) => {
   const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
+    setIsLoading(true)
     fetch(url)
       .then(async (response) => {
         const jsonReturn = await response.json();
@@ -20,6 +21,7 @@ const useFetch = (url = {}) => {
   }, [url]);
 
   const reFetch = () => {
+    setIsLoading(true)
     fetch(url)
       .then(async (response) => {
         const jsonReturn = await response.json();

@@ -2,12 +2,13 @@ import styles from '../styles/MainSection.module.css';
 import DivisorSVG from '../assets/pattern-divider-desktop.svg';
 import DiceSVG from '../assets/icon-dice.svg';
 import useFetch from '../customHooks/useFetch';
+import Spinner from './Spinner';
 
 const MainSection = () => {
   const { isLoading, value, error, reFetch } = useFetch("https://api.adviceslip.com/advice");
 
   if (isLoading) {
-    return "Carregando...";
+    return <section className={styles.boxContent}> <Spinner /> </section>
   } else if (error) {
     console.log(error);
   }

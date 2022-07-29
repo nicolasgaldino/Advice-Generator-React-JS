@@ -1,0 +1,47 @@
+.spinner {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dot::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.dot {
+  animation: spin 1.8s infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dot:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.dot:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.dot:nth-child(5) {
+  animation-delay: 400ms;
+}
