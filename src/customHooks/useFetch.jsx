@@ -16,10 +16,24 @@ const useFetch = (url = {}) => {
       })
       .finally(() => {
         setIsLoading(false);
-      })
+      });
   }, [url]);
 
-  return { isLoading, value, error };
+  const reFetch = () => {
+    fetch(url)
+      .then(async (response) => {
+        const jsonReturn = await response.json();
+        setValue(jsonReturn);
+      })
+      .catch((error) => {
+        setError(error);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
+  };
+
+  return { isLoading, value, error, reFetch };
 }
 
 export default useFetch

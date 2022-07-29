@@ -4,13 +4,13 @@ import DiceSVG from '../assets/icon-dice.svg';
 import useFetch from '../customHooks/useFetch';
 
 const MainSection = () => {
-  const { isLoading, value, error } = useFetch("https://api.adviceslip.com/advice");
+  const { isLoading, value, error, reFetch } = useFetch("https://api.adviceslip.com/advice");
 
   if (isLoading) {
     return "Carregando...";
   } else if (error) {
     console.log(error);
-  };
+  }
 
   return (
     <section className={styles.boxContent}>
@@ -25,7 +25,12 @@ const MainSection = () => {
       </h1>
       <img src={DivisorSVG} alt="DivisorSVG" className={styles.dividerImg} />
       <span className={styles.diceSpan}>
-        <img src={DiceSVG} alt="DiceSVG" className={styles.diceBtn} />
+        <img
+          src={DiceSVG}
+          alt="DiceSVG"
+          className={styles.diceBtn}
+          onClick={() => reFetch()}
+        />
       </span>
     </section>
   )
