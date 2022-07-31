@@ -5,6 +5,9 @@
   --darkGrayishBlue: #323a49;
   --grayishBlue: #4e5d73;
   --boxShadow: #000000a3;
+  --white: #f0e6e6;
+  --lightPerl: #edeae0;
+  --whitegrey: #dcdcdc;
 }
 
 * {
@@ -16,6 +19,14 @@
 }
 
 body {
+  background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
   background-color: var(--darkBlue);
   height: 100vh;
   display: flex;

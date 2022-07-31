@@ -13,13 +13,37 @@
   position: relative;
 }
 
+.buttonDIV {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+
+.changeButton {
+  padding: 0.3125rem 1.25rem;
+  border-radius: 0.625rem;
+  border: none;
+  font-weight: 500;
+  background-color: var(--grayishBlue);
+  color: var(--neonGreen);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.changeButton:hover {
+  transform: scale(1.2);
+}
+
 .adviceTitle {
   display: flex;
   font-weight: 500;
   color: var(--neonGreen);
   text-transform: uppercase;
   letter-spacing: 0.125rem;
-  margin-bottom: 1.875rem;
 }
 
 .adviceId {
@@ -58,6 +82,76 @@
   display: block;
   width: 1.875rem;
   cursor: pointer;
+}
+
+/* LIGHT MODE */
+
+:root {
+  --lightCyan: #cee3e9;
+  --neonGreen: #52ffa8;
+  --darkBlue: #1f2632;
+  --darkGrayishBlue: #323a49;
+  --grayishBlue: #4e5d73;
+  --boxShadow: #000000a3;
+  --lightBoxShadow: #0000006c;
+  --lightButtonShadow: #00000017;
+  --white: #f0e6e6;
+  --lightPerl: #edeae0;
+  --whitegrey: #dcdcdc;
+}
+
+.boxContentLight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40.625rem;
+  height: 23.75rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  background-color: var(--whitegrey);
+  box-shadow: 0.3125rem 0.3125rem 1.875rem 0.625rem var(--lightBoxShadow);
+  color: var(--darkBlue);
+  position: relative;
+}
+
+.changeButtonLight {
+  padding: 0.3125rem 1.25rem;
+  border-radius: 0.625rem;
+  border: none;
+  font-weight: 500;
+  background-color: var(--lightPerl);
+  box-shadow: 0.3125rem 0.3125rem 1.875rem 0.625rem var(--lightButtonShadow);
+  color: var(--grayishBlue);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.changeButtonLight:hover {
+  transform: scale(1.2);
+}
+
+.adviceTitleLight {
+  display: flex;
+  font-weight: 700;
+  color: var(--grayishBlue);
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.diceSpanLight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  border-radius: 50%;
+  background-color: var(--lightPerl);
+  position: absolute;
+  bottom: -8%;
 }
 
 /* MOBILE */
