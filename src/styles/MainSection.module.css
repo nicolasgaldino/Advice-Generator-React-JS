@@ -86,20 +86,6 @@
 
 /* LIGHT MODE */
 
-:root {
-  --lightCyan: #cee3e9;
-  --neonGreen: #52ffa8;
-  --darkBlue: #1f2632;
-  --darkGrayishBlue: #323a49;
-  --grayishBlue: #4e5d73;
-  --boxShadow: #000000a3;
-  --lightBoxShadow: #0000006c;
-  --lightButtonShadow: #00000017;
-  --white: #f0e6e6;
-  --lightPerl: #edeae0;
-  --whitegrey: #dcdcdc;
-}
-
 .boxContentLight {
   display: flex;
   flex-direction: column;
@@ -158,6 +144,10 @@
 
 @media (max-width: 720px) {
   .boxContent {
+    width: 21.875rem;
+  }
+
+  .boxContentLight {
     width: 21.875rem;
   }
 
