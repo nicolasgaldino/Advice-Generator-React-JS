@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Advice-Generator-React-JS/static/css/main.5c50169c.css",
-    "main.js": "/Advice-Generator-React-JS/static/js/main.bc68bdc8.js",
+    "main.css": "/Advice-Generator-React-JS/static/css/main.065b9b85.css",
+    "main.js": "/Advice-Generator-React-JS/static/js/main.5a81f5dc.js",
     "index.html": "/Advice-Generator-React-JS/index.html",
     "static/media/icon-dice.svg": "/Advice-Generator-React-JS/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
     "static/media/pattern-divider-desktop.svg": "/Advice-Generator-React-JS/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
-    "main.5c50169c.css.map": "/Advice-Generator-React-JS/static/css/main.5c50169c.css.map",
-    "main.bc68bdc8.js.map": "/Advice-Generator-React-JS/static/js/main.bc68bdc8.js.map"
+    "main.065b9b85.css.map": "/Advice-Generator-React-JS/static/css/main.065b9b85.css.map",
+    "main.5a81f5dc.js.map": "/Advice-Generator-React-JS/static/js/main.5a81f5dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c50169c.css",
-    "static/js/main.bc68bdc8.js"
+    "static/css/main.065b9b85.css",
+    "static/js/main.5a81f5dc.js"
   ]
 }
